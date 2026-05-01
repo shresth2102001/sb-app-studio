@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SB App Studio - Developer Profile</title>
+    <meta name="description" content="SB App Studio - Developer profile. Explore our apps, contact details, and more.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=2">
+</head>
+<body>
+    <canvas id="particles-canvas"></canvas>
+    <div class="background-wrapper">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+    </div>
+    
+    <nav class="glass-nav">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-text">SB</span> <span class="logo-subtext">App Studio</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#apps">Apps</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero-section">
+        <div class="hero-content glass-card fade-in">
+            <div class="icon-container" style="display: flex; justify-content: center; margin-bottom: 2rem;">
+                <div class="app-icon" style="background: transparent; border: none; box-shadow: none; width: 120px; height: 120px;">
+                    <img src="sb-logo-transparent.png" alt="SB App Studio Logo" style="width: 120px; height: 120px; border-radius: 30px; box-shadow: 0 20px 40px rgba(0, 114, 255, 0.3); display: block; object-fit: cover;">
+                </div>
+            </div>
+            <h1>SB App Studio</h1>
+            <p>Built to Create, Designed to Inspire.</p>
+            <a href="#apps" class="cta-button">Explore Our Apps</a>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section id="about" class="section-container fade-in">
+            <h2>About the Studio</h2>
+            <div class="glass-card info-card">
+                <p>Welcome to <strong>SB App Studio</strong>, a premier software development organization dedicated to crafting next-generation digital experiences. Founded with a vision to merge flawless functionality with breathtaking aesthetics, we specialize in building highly interactive, scalable, and user-centric applications.</p>
+                <p style="margin-top: 1rem;">Our team of passionate developers, designers, and innovators constantly push the boundaries of modern technology. From astrology and lifestyle to utility and productivity, we ensure that every product we launch delivers exceptional value to our users.</p>
+                <p style="margin-top: 1rem;">With a strong commitment to quality and a meticulous eye for detail, SB App Studio isn't just about writing code—it's about creating digital art that solves real-world problems.</p>
+            </div>
+        </section>
+
+        <section id="apps" class="section-container fade-in">
+            <h2>Our Applications</h2>
+            <div class="apps-grid">
+                <div class="app-card glass-card" id="astronumy-card" style="cursor: pointer;">
+                    <img src="astronumy-icon.png" alt="Astronumy Icon" class="app-image-icon" style="width: 100px; height: 100px; border-radius: 24px; margin: 0 auto 1.5rem auto; object-fit: cover; box-shadow: 0 10px 20px rgba(0,0,0,0.4); display: block;">
+                    <h3>Astronumy</h3>
+                    <p>Discover deep cosmic insights and celestial guidance.</p>
+                    <button class="store-button disabled-btn" style="opacity: 0.6; cursor: not-allowed; background: rgba(255,255,255,0.05);">Link will be there soon</button>
+                </div>
+                <!-- More apps can be added here -->
+            </div>
+        </section>
+
+        <section id="contact" class="section-container fade-in">
+            <h2>Public Account Details</h2>
+            <div class="contact-grid">
+                <div class="contact-card glass-card">
+                    <div class="icon">📍</div>
+                    <h3>Address</h3>
+                    <p>209 Starlit tower<br>YN Road<br>Indore - 452010<br>India (IN)</p>
+                </div>
+                <div class="contact-card glass-card">
+                    <div class="icon">✉️</div>
+                    <h3>Developer Email</h3>
+                    <a href="mailto:sbapplicationstudio@gmail.com">sbapplicationstudio@gmail.com</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="glass-footer">
+        <p>&copy; 2026 SB App Studio. All rights reserved.</p>
+    </footer>
+
+    <!-- App Modal -->
+    <div id="app-modal" class="modal">
+        <div class="modal-content glass-card fade-in">
+            <span class="close-button">&times;</span>
+            <div class="modal-body">
+                <h2>🌌 Astronumy – Discover Your Cosmic Path</h2>
+                <p>Unlock the secrets of the universe with Astronumy, your all-in-one astrology companion powered by AI and cosmic intelligence. Whether you're seeking daily guidance, love insights, or deeper self-understanding, Astronumy brings the stars closer to you.</p>
+
+                <h3>🔮 Personalized Daily Horoscopes</h3>
+                <ul>
+                    <li>Start your day with powerful, meaningful insights written in the stars.</li>
+                    <li>Receive timeless, personalized horoscopes tailored to your zodiac sign—covering love, career, health, and more.</li>
+                </ul>
+
+                <h3>🤖 AI Astrology Guru (Powered by Gemini)</h3>
+                <ul>
+                    <li>Chat with your personal AI Astrology Guru anytime.</li>
+                    <li>Ask questions about your life, relationships, or future—and get deep, mystical answers instantly.</li>
+                </ul>
+
+                <h3>🌙 Birth Chart Insights</h3>
+                <ul>
+                    <li>Discover your unique cosmic blueprint.</li>
+                    <li>Understand your personality, strengths, and destiny through detailed astrological interpretations.</li>
+                </ul>
+
+                <h3>❤️ Love Compatibility</h3>
+                <ul>
+                    <li>Curious about your relationship?</li>
+                    <li>Explore compatibility insights and uncover the hidden dynamics between you and your partner.</li>
+                </ul>
+
+                <h3>🎯 Gamified Experience & Rewards</h3>
+                <p>Stay consistent and get rewarded!</p>
+                <ul>
+                    <li>Daily login streaks</li>
+                    <li>Earn coins & unlock premium insights</li>
+                    <li>Fun, engaging progression system</li>
+                </ul>
+
+                <h3>💾 Save Your Cosmic Journey</h3>
+                <p>Bookmark your favorite readings and revisit them anytime with your personal Cosmic Archive.</p>
+
+                <h3>🔔 Smart Notifications</h3>
+                <ul>
+                    <li>Never miss your daily guidance.</li>
+                    <li>Get gentle reminders to check your horoscope and maintain your streak.</li>
+                </ul>
+
+                <h3>💎 Premium Experience</h3>
+                <ul>
+                    <li>Unlock deeper insights</li>
+                    <li>Access exclusive features</li>
+                    <li>Ad-supported + optional upgrades</li>
+                </ul>
+
+                <h3>🌠 Why Choose Astronumy?</h3>
+                <ul>
+                    <li>AI-powered astrology (next-gen experience)</li>
+                    <li>Beautiful cosmic UI & smooth performance</li>
+                    <li>Secure & personalized user profiles</li>
+                    <li>Built for both beginners and astrology lovers</li>
+                </ul>
+
+                <p style="text-align: center; font-size: 1.2rem; margin-top: 2rem;"><strong>✨ Your Universe. Your Journey.</strong></p>
+                <p style="text-align: center;">The stars don’t control you—they guide you.</p>
+                <p style="text-align: center; color: #00c6ff; font-weight: 600; margin-top: 1rem;">Download Astronumy now and step into your cosmic destiny 🚀</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Vanilla Tilt JS for Interactive Cards -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
