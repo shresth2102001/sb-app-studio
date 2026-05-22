@@ -157,26 +157,34 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Modal Logic
-    const modal = document.getElementById('app-modal');
-    const astronumyCard = document.getElementById('astronumy-card');
-    const closeBtn = document.querySelector('.close-button');
+    function closeModal(modal) {
+        modal.classList.remove('show');
+        document.body.style.overflow = '';
+    }
 
-    if (modal && astronumyCard && closeBtn) {
-        astronumyCard.addEventListener('click', () => {
+    document.querySelectorAll('[data-modal-target]').forEach(trigger => {
+        trigger.addEventListener('click', (event) => {
+            if (event.target.closest('a')) return;
+
+            const modal = document.getElementById(trigger.dataset.modalTarget);
+            if (!modal) return;
+
             modal.classList.add('show');
-            document.body.style.overflow = 'hidden'; // Prevent scrolling background
+            document.body.style.overflow = 'hidden';
         });
+    });
 
-        closeBtn.addEventListener('click', () => {
-            modal.classList.remove('show');
-            document.body.style.overflow = '';
-        });
+    document.querySelectorAll('.modal').forEach(modal => {
+        const closeBtn = modal.querySelector('.close-button');
 
-        window.addEventListener('click', (event) => {
+        if (closeBtn) {
+            closeBtn.addEventListener('click', () => closeModal(modal));
+        }
+
+        modal.addEventListener('click', (event) => {
             if (event.target === modal) {
-                modal.classList.remove('show');
-                document.body.style.overflow = '';
+                closeModal(modal);
             }
         });
-    }
+    });
 });

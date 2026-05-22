@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SB App Studio - Developer Profile</title>
-    <meta name="description" content="SB App Studio - Developer profile. Explore our apps, contact details, and more.">
+    <title>SB App Studio - App, Web & AI Development</title>
+    <meta name="description" content="SB App Studio builds mobile apps, websites, web apps, and AI-powered digital products. Open for project suggestions, technical discussions, and collaborations.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
@@ -14,10 +14,7 @@
 </head>
 <body>
     <canvas id="particles-canvas"></canvas>
-    <div class="background-wrapper">
-        <div class="blob blob-1"></div>
-        <div class="blob blob-2"></div>
-    </div>
+    <div class="background-wrapper"></div>
     
     <nav class="glass-nav">
         <div class="nav-container">
@@ -26,66 +23,175 @@
             </div>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
                 <li><a href="#apps">Apps</a></li>
+                <li><a href="#work">Work With Us</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
     </nav>
 
     <header class="hero-section">
-        <div class="hero-content glass-card fade-in">
-            <div class="icon-container" style="display: flex; justify-content: center; margin-bottom: 2rem;">
-                <div class="app-icon" style="background: transparent; border: none; box-shadow: none; width: 120px; height: 120px;">
-                    <img src="sb-logo-transparent.png" alt="SB App Studio Logo" style="width: 120px; height: 120px; border-radius: 30px; box-shadow: 0 20px 40px rgba(0, 114, 255, 0.3); display: block; object-fit: cover;">
+        <div class="hero-content fade-in">
+            <div class="icon-container">
+                <div class="app-icon logo-icon">
+                    <img src="sb-logo-transparent.png" alt="SB App Studio Logo">
                 </div>
             </div>
+            <span class="eyebrow">Independent app studio in India</span>
             <h1>SB App Studio</h1>
-            <p>Built to Create, Designed to Inspire.</p>
-            <a href="#apps" class="cta-button">Explore Our Apps</a>
+            <p>Design-led mobile apps, websites, web apps, AI-powered experiences, and reliable software built with care.</p>
+            <div class="hero-actions">
+                <a href="#work" class="btn btn-primary">Start a Project</a>
+                <a href="#services" class="btn btn-secondary">View Services</a>
+            </div>
+            <div class="hero-stats" aria-label="Studio highlights">
+                <div class="stat-card">
+                    <strong>Mobile</strong>
+                    <span>Android apps</span>
+                </div>
+                <div class="stat-card">
+                    <strong>Websites</strong>
+                    <span>Modern sites</span>
+                </div>
+                <div class="stat-card">
+                    <strong>Web Apps</strong>
+                    <span>Custom tools</span>
+                </div>
+                <div class="stat-card">
+                    <strong>AI</strong>
+                    <span>Smart features</span>
+                </div>
+            </div>
         </div>
     </header>
 
     <main class="main-content">
         <section id="about" class="section-container fade-in">
-            <h2>About the Studio</h2>
-            <div class="glass-card info-card">
+            <div class="section-heading">
+                <span class="section-kicker">About</span>
+                <h2>About the Studio</h2>
+            </div>
+            <div class="glass-card info-card text-stack">
                 <p>Welcome to <strong>SB App Studio</strong>, a premier software development organization dedicated to crafting next-generation digital experiences. Founded with a vision to merge flawless functionality with breathtaking aesthetics, we specialize in building highly interactive, scalable, and user-centric applications.</p>
-                <p style="margin-top: 1rem;">Our team of passionate developers, designers, and innovators constantly push the boundaries of modern technology. From astrology and lifestyle to utility and productivity, we ensure that every product we launch delivers exceptional value to our users.</p>
-                <p style="margin-top: 1rem;">With a strong commitment to quality and a meticulous eye for detail, SB App Studio isn't just about writing code—it's about creating digital art that solves real-world problems.</p>
+                <p>Our team of passionate developers, designers, and innovators constantly push the boundaries of modern technology. From astrology and lifestyle to utility and productivity, we ensure that every product we launch delivers exceptional value to our users.</p>
+                <p>With a strong commitment to quality and a meticulous eye for detail, SB App Studio isn't just about writing code—it's about creating digital art that solves real-world problems.</p>
+            </div>
+        </section>
+
+        <section id="services" class="section-container fade-in">
+            <div class="section-heading">
+                <span class="section-kicker">Services</span>
+                <h2>What We Build</h2>
+            </div>
+            <div class="services-grid">
+                <article class="service-card glass-card">
+                    <span class="card-label">Mobile</span>
+                    <h3>Android App Development</h3>
+                    <p>Complete mobile app planning, interface design, feature development, Play Store preparation, and improvement of existing app ideas.</p>
+                </article>
+                <article class="service-card glass-card">
+                    <span class="card-label">Websites</span>
+                    <h3>Modern Website Design</h3>
+                    <p>Fast, responsive, polished websites for studios, products, personal brands, apps, portfolios, and business pages.</p>
+                </article>
+                <article class="service-card glass-card">
+                    <span class="card-label">Web Apps</span>
+                    <h3>Custom Web Applications</h3>
+                    <p>Interactive dashboards, tools, workflows, admin panels, and browser-based products built around practical user needs.</p>
+                </article>
+                <article class="service-card glass-card">
+                    <span class="card-label">AI</span>
+                    <h3>AI-Powered Features</h3>
+                    <p>Smart assistants, content flows, recommendations, automation ideas, and AI integrations for apps and websites.</p>
+                </article>
             </div>
         </section>
 
         <section id="apps" class="section-container fade-in">
-            <h2>Our Applications</h2>
+            <div class="section-heading">
+                <span class="section-kicker">Products</span>
+                <h2>Our Applications</h2>
+            </div>
             <div class="apps-grid">
-                <div class="app-card glass-card" id="astronumy-card" style="cursor: pointer;">
-                    <img src="astronumy-icon.png" alt="Astronumy Icon" class="app-image-icon" style="width: 100px; height: 100px; border-radius: 24px; margin: 0 auto 1.5rem auto; object-fit: cover; box-shadow: 0 10px 20px rgba(0,0,0,0.4); display: block;">
+                <div class="app-card glass-card" id="astronumy-card" data-modal-target="app-modal">
+                    <img src="astronumy-icon.png" alt="Astronumy Icon" class="app-image-icon">
                     <h3>Astronumy</h3>
                     <p>Discover deep cosmic insights and celestial guidance.</p>
-                    <a href="https://play.google.com/store/apps/details?id=com.sbappstudio.astronumy" target="_blank" class="store-button">Download on Google Play</a>
+                    <a href="https://play.google.com/store/apps/details?id=com.sbappstudio.astronumy" target="_blank" class="btn btn-compact">Download on Google Play</a>
                 </div>
                 <!-- More apps can be added here -->
             </div>
         </section>
 
+        <section id="work" class="section-container split-section fade-in">
+            <div>
+                <span class="section-kicker">Project Availability</span>
+                <h2>Open for New Ideas</h2>
+                <p class="section-lead">I am open for project suggestions, app ideas, collaborations, website development, web app development, and technical discussions. Share what you want to build, improve, or solve, and I will help shape it into a practical digital product.</p>
+            </div>
+            <div class="work-panel glass-card">
+                <h3>Let's talk about your next project</h3>
+                <p>Available for mobile apps, websites, web apps, UI/UX improvements, AI integrations, technical guidance, and product planning.</p>
+                <div class="contact-actions">
+                    <a href="mailto:sbapplicationstudio@gmail.com" class="btn btn-primary">Email Studio</a>
+                    <a href="tel:+917879760790" class="btn btn-secondary">Call +91 7879760790</a>
+                </div>
+            </div>
+        </section>
+
         <section id="contact" class="section-container fade-in">
-            <h2>Public Account Details</h2>
+            <div class="section-heading">
+                <span class="section-kicker">Reach Out</span>
+                <h2>Contact Details</h2>
+            </div>
             <div class="contact-grid">
                 <div class="contact-card glass-card">
-                    <div class="icon">📍</div>
+                    <div class="icon">Address</div>
                     <h3>Address</h3>
-                    <p>209 Starlit tower<br>YN Road<br>Indore - 452010<br>India (IN)</p>
+                    <p>209 Starlit tower, YN Road<br>Indore - 452010, India (IN)</p>
                 </div>
                 <div class="contact-card glass-card">
-                    <div class="icon">✉️</div>
+                    <div class="icon">Email</div>
                     <h3>Developer Email</h3>
                     <a href="mailto:sbapplicationstudio@gmail.com">sbapplicationstudio@gmail.com</a>
                 </div>
                 <div class="contact-card glass-card">
-                    <a href="https://www.instagram.com/sbappstudio" target="_blank" style="display: flex; flex-direction: column; align-items: center; text-decoration: none; color: inherit; gap: 1rem;">
-                        <div class="icon" style="font-size: 3rem;">📱</div>
-                        <h3>Instagram</h3>
-                    </a>
+                    <div class="icon">Phone</div>
+                    <h3>Phone</h3>
+                    <a href="tel:+917879760790">+91 7879760790</a>
+                </div>
+                <div class="contact-card glass-card">
+                    <div class="contact-link-card">
+                        <div class="icon">Social</div>
+                        <h3>Social Links</h3>
+                        <div class="social-links">
+                            <a href="https://www.instagram.com/sbappstudio" target="_blank" class="social-link" aria-label="SB App Studio on Instagram">
+                                <span class="social-icon instagram-icon" aria-hidden="true">
+                                    <svg viewBox="0 0 24 24" role="img">
+                                        <path d="M7.8 2h8.4A5.8 5.8 0 0 1 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8A5.8 5.8 0 0 1 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2Zm0 2A3.8 3.8 0 0 0 4 7.8v8.4A3.8 3.8 0 0 0 7.8 20h8.4a3.8 3.8 0 0 0 3.8-3.8V7.8A3.8 3.8 0 0 0 16.2 4H7.8Zm8.7 2.4a1.1 1.1 0 1 1 0 2.2 1.1 1.1 0 0 1 0-2.2ZM12 7.2A4.8 4.8 0 1 1 12 16.8 4.8 4.8 0 0 1 12 7.2Zm0 2A2.8 2.8 0 1 0 12 14.8 2.8 2.8 0 0 0 12 9.2Z"/>
+                                    </svg>
+                                </span>
+                                <span>Instagram</span>
+                            </a>
+                            <a href="https://play.google.com/store/apps/dev?id=7206037598142066445" target="_blank" class="social-link" aria-label="SB App Studio on Google Play">
+                                <span class="social-icon playstore-icon" aria-hidden="true">
+                                    <svg viewBox="0 0 24 24" role="img">
+                                        <path d="M4.4 3.2c-.3.3-.4.7-.4 1.2v15.2c0 .5.1.9.4 1.2l8.7-8.8-8.7-8.8Zm10 7.5 2.2-2.2L6.2 2.6l8.2 8.1Zm-8.2 10.7 10.4-5.9-2.2-2.2-8.2 8.1Zm11.8-6.7 1.6-.9c.6-.3.9-.9.9-1.8s-.3-1.5-.9-1.8l-1.6-.9-2.4 2.7 2.4 2.7Z"/>
+                                    </svg>
+                                </span>
+                                <span>Play Store</span>
+                            </a>
+                            <a href="https://www.facebook.com/profile.php?id=61590028352082" target="_blank" class="social-link" aria-label="SB App Studio on Facebook">
+                                <span class="social-icon facebook-icon" aria-hidden="true">
+                                    <svg viewBox="0 0 24 24" role="img">
+                                        <path d="M14.2 8.1V6.7c0-.7.5-.9.9-.9h2.3V2.1L14.2 2C10.7 2 9.8 4.5 9.8 6.2v1.9H7.4V12h2.4v10h4.4V12h3l.4-3.9h-3.4Z"/>
+                                    </svg>
+                                </span>
+                                <span>Facebook</span>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -159,9 +265,9 @@
                     <li>Built for both beginners and astrology lovers</li>
                 </ul>
 
-                <p style="text-align: center; font-size: 1.2rem; margin-top: 2rem;"><strong>✨ Your Universe. Your Journey.</strong></p>
-                <p style="text-align: center;">The stars don’t control you—they guide you.</p>
-                <p style="text-align: center; color: #00c6ff; font-weight: 600; margin-top: 1rem;">Download Astronumy now and step into your cosmic destiny 🚀</p>
+                <p class="modal-tagline"><strong>✨ Your Universe. Your Journey.</strong></p>
+                <p class="modal-note">The stars don’t control you—they guide you.</p>
+                <p class="modal-cta">Download Astronumy now and step into your cosmic destiny 🚀</p>
             </div>
         </div>
     </div>
