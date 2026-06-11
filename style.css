@@ -753,10 +753,32 @@ h2::after {
 /* Footer */
 .glass-footer {
     text-align: center;
-    padding: 2rem;
+    padding: 1.5rem 2rem 2rem;
     border-top: 1px solid var(--glass-border);
     background: rgba(15, 17, 26, 0.8);
     color: var(--text-secondary);
+}
+
+.footer-credentials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+    margin-bottom: 0.75rem;
+    font-size: 0.78rem;
+    letter-spacing: 0.3px;
+    color: var(--text-muted);
+}
+
+.footer-credential strong {
+    color: var(--text-secondary);
+    font-weight: 600;
+}
+
+.footer-divider {
+    color: var(--glass-border);
+    user-select: none;
 }
 
 /* Modal Styling */
