@@ -11,9 +11,30 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: FirebaseExtended/action-hosting-deploy@v0
+      - uses: actions/setup-node@v4
         with:
-          repoToken: ${{ secrets.GITHUB_TOKEN }}
-          firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_SB_APP_STUDIO }}
-          channelId: live
-          projectId: sb-app-studio
+          node-version: 20
+      - name: Deploy to Firebase Hosting
+        env:
+          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_SB_APP_STUDIO }}
+          GOOGLE_APPLICATION_CREDENTIALS: ${{ runner.temp }}/firebase-service-account.json
+        run: |
+          printf '%s' "$FIREBASE_SERVICE_ACCOUNT" > "$GOOGLE_APPLICATION_CREDENTIALS"
+
+          set +e
+          output=$(npx firebase-tools@15.22.3 deploy --only hosting --project sb-app-studio --json 2>&1)
+          status=$?
+          set -e
+
+          printf '%s\n' "$output"
+
+          if [ "$status" -eq 0 ]; then
+            exit 0
+          fi
+
+          if printf '%s\n' "$output" | grep -Fq "is the current active version"; then
+            echo "Firebase Hosting version is already live; treating deploy as successful."
+            exit 0
+          fi
+
+          exit "$status"
