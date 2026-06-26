@@ -1,8 +1,12 @@
 {
   "hosting": {
-    "public": "y",
+    "public": ".",
     "ignore": [
       "firebase.json",
+      "firebase-debug.log",
+      "firebase-debug.*.log",
+      "*.log",
+      "y/**",
       "**/.*",
       "**/node_modules/**"
     ],
